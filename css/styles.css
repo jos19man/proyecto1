@@ -3,6 +3,8 @@
 /* Fonts */
 /* Importar aquí la font */
 
+@import url('https://fonts.googleapis.com/css2? family= Lato & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
@@ -18,9 +20,116 @@
     scroll-behavior: smooth;
 }
 
+
+body{
+    background-color: #fbfbfb;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #0f0f0f;
+    line-height: 1.2;
+}
+
+header{
+    display: flex;
+    /*flex-direction: row; este es un error*/ 
+    justify-content: space-between;
+    /*margin: 20px; otro error que tengo*/
+    align-items: center;
+    padding:16px;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fbfbfb;
+    box-shadow: 0 3px 10px -5px #5f5f5f;
+    
+
+}
+#descargar{
+    background-color: #af599e;
+    bottom: 20px;
+    border-radius: 8px;
+    color: #fbfbfb;
+    padding: 12px 20px;
+    font-size: 20px;
+    display: inline-block;
+
+}
+
+.imgRedonda{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+h1{ font-size: 36px;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 28px;
+
+}
+
+p{
+    margin: 16px 0;
+}
+
+
+.logo{
+    width: 95px;
+    
+}
+#menu{
+    display: flex;
+    font-size: 20px;
+    }
+
+.menu-item{
+    padding: 16px;
+    display: inline-block;
+    }
+
+.hola{
+    width: 100%;
+    text-align: center;
+}
+
+#contacto{
+    text-align: center;
+
+}
+
+.historia{
+    background-color: rgba(175, 89, 158, 0.3);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    /*no se por que el max width en este valor haciendo correciones lo coloque*/
+    max-width: 600px;
+
+}
+
+#enlaces{
+    display: flex;
+    margin-top: 20px;
+}
+#enlaces li{
+    margin: 16px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.icn{
+    width: 80px;
+}
 /* Para quitar los puntos a los items de listas */
 ul {
-    list-style: none;
+    list-style: none
 }
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
@@ -36,6 +145,33 @@ main {
     max-width: 1200px;
     margin: auto;
 }
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+#inicio{
+    justify-content: space-around;
+
+}
+
+
+#footer{
+    background-color: #af599e;
+    display: flex;
+    justify-content: center;
+    color: #fbfbfb;
+    height: 90px;
+    align-items: center;
+
+}
+
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
